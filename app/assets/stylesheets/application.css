@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+    background: linear-gradient(45deg, ghostwhite, cornflowerblue);
+}
+
+
+.nav {
+    max-width: 250px;
+    padding: 1rem;
+    color: blue;
+    border-width: 8px;
+    border-style: solid;
+    border-image:
+            linear-gradient(
+                    to bottom,
+                    blue,
+                    rgba(0, 0, 0, 0)
+            ) 1 100%;
+}

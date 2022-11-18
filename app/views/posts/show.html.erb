@@ -1,2 +1,19 @@
-<h1>Posts</h1>
-<p>Your post will be show here</p>
+<% if current_user %>
+<h2 class="button"><%= link_to "New Post", new_post_path, class:'btn btn-success' %></h2>
+  <div>
+    <table class="posts">
+      <tr>
+        <td>CONTENT</td>
+        <td>USER</td>
+        <td>DATA</td>
+      </tr>
+      <% @posts.each do |post| %>
+       <tr>
+         <th class="post"><%= post.content %></th>
+         <th><%= post.user.email %></th>
+         <th><%= post.created_at %></th>
+       </tr>
+      <% end %>
+    </table>
+  </div>
+<% end %>

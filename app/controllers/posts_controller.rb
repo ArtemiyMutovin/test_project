@@ -1,4 +1,4 @@
-class BlogsController < ApplicationController
+class PostsController < ApplicationController
   before_action :authenticate_user!
 
   def show; end

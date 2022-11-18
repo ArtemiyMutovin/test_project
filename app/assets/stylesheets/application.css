@@ -15,12 +15,12 @@
  */
 
 body {
-    background: linear-gradient(45deg, ghostwhite, cornflowerblue);
+    background: linear-gradient(45deg, coral, cornflowerblue);
 }
 
 
 .nav {
-    max-width: 250px;
+    max-width: 300px;
     padding: 1rem;
     color: blue;
     border-width: 8px;
@@ -31,4 +31,44 @@ body {
                     blue,
                     rgba(0, 0, 0, 0)
             ) 1 100%;
+}
+.post {
+    color: darkblue;
+    text-align: center;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.posts {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    margin: auto;
+    border-radius: 30px;
+    background: cornflowerblue;
+    text-align: center;
+}
+
+.posts::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+    background: linear-gradient(35deg, orange, blue);
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.new {
+    margin-left: 50px;
+    color: darkblue;
+
 }

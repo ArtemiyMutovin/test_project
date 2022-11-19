@@ -3,12 +3,14 @@
   <div>
     <table class="posts">
       <tr>
+        <td>ID</td>
         <td>CONTENT</td>
         <td>USER</td>
-        <td>DATA</td>
+        <td>DATE</td>
       </tr>
       <% @posts.each do |post| %>
        <tr>
+         <th><%= post.id %></th>
          <th class="post"><%= post.content %></th>
          <th><%= post.user.email %></th>
          <th><%= post.created_at %></th>

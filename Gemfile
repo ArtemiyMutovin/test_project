@@ -44,9 +44,6 @@ gem 'rubocop-rspec'
 
 group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
-  gem 'factory_bot_rails'
-  gem 'rails-controller-testing'
-  gem 'rspec-rails', git: 'git@github.com:rspec/rspec-rails.git', branch: '6-0-maintenance'
 end
 
 group :development do
@@ -63,7 +60,6 @@ end
 
 group :test do
   gem 'capybara'
-  gem 'database_cleaner-active_record'
   gem 'selenium-webdriver'
   gem 'shoulda-matchers', '~> 5.1.0'
   gem 'webdrivers'
